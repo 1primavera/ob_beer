@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="beer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script>
+        $(document).ready(function () {
+            let url = "http://spartacodingclub.shop/sparta_api/weather/seoul";
+            fetch(url).then(res => res.json()).then(data => {
+                let temp = data['temp'];
+                $('#temperature').text(temp);
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="#"><img src="images/yeosu-logo.png" alt=""></a></div>
+        <nav class="navbar">
+            <ul class="m-menu">
+                <li><a href="">회사소개</a>
+                    <ul class="s-menu">
+                        <li><a href="">연혁</a></li>
+                        <li><a href="">인사말</a></li>
+                        <li><a href="">CI소개</a></li>
+                    </ul>
+                </li>
+                <li><a href="">브랜드</a>
+                    <ul class="s-menu">
+                        <li><a href="">브랜드 스토리</a></li>
+                        <li><a href="">매장</a></li>
+                    </ul>
+                </li>
+                <li><a href="">MENU</a>
+                    <ul class="s-menu">
+                        <li><a href="#">NEW</a></li>
+                        <li><a href="#">BEST</a></li>
+                        <li><a href="#">Terra</a></li>
+                        <li><a href="#">Feel good</a></li>
+                        <li><a href="#">Cass fresh</a></li>
+                        <li><a href="#">Stella</a></li>
+                        <li><a href="#">Ect</a></li>
+                    </ul>
+                </li>
+                <li><a href="">EVENT</a>
+                    <ul class="s-menu">
+                        <li><a href="">Event</a></li>
+                        <li><a href="">타임세일</a></li>
+                        <li><a href="">혜택</a></li>
+                        <li><a href="">Event</a></li>
+                    </ul>
+                </li>
+                <li><a href="">커뮤니티</a>
+                    <ul class="s-menu">
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">고객의 소리</a></li>
+                        <li><a href="">자주묻는 질문</a></li>
+                        <li><a href="">NEWS</a></li>
+                        <li><a href="">상담전화</a></li>
+                    </ul>
+                </li>
+        </nav>
+        <ul class="m-icons">
+            <!-- <a href="#" class="fa-brands fa-instagram"></a>
+            <a href="#" class="fa-solid fa-user"></a> -->
+            <a href="#" class="fa-solid fa-bars"></a>
+        </ul>
+    </header>
+
+
+
+
+
+
+
+    <section class="section1">
+        <div class="weather">
+            <i class="fa-solid fa-sun"></i>
+            <h1 id="temperature">23℃</h1>
+            <p>마시기 좋은 날씨</p>
+        </div>
+        <div class="main-img">
+            <img src="images/background.png" alt="">
+        </div>
+        <div class="cloud">
+            <div class="main-img-camping">
+                <img src="images/camping.png" alt="">
+            </div>
+            <div class="cloud-img1 ">
+                <div class="cloud1"><img src="images/cloud1.png" alt=""></div>
+            </div>
+            <div class="cloud-img2">
+                <div class="cloud2"><img src="images/cloud2.png" alt=""></div>
+            </div>
+            <div class="cloud-img3">
+                <div class="cloud3"><img src="images/cloud3.png" alt=""></div>
+            </div>
+            <div class="cloud-img4">
+                <div class="cloud4"><img src="images/cloud4.png" alt=""></div>
+            </div>
+        </div>
+        <div class="main-title">
+            <div class="box1">
+                <img src="images/title1.png" alt="">
+            </div>
+            <div class="box2">
+                <img src="images/title2.png" alt="">
+            </div>
+            <div class="box3">
+                <img src="images/title3.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <div class="section2">
+        <div class="box-container">
+            <div class="box">
+                <div class="image1">
+                    <img src="images/section2_p1.png" alt="">
+                </div>
+                <div class="content">
+                    <h1>캠핑=맥주</h1>
+                    <p>자연 속에서 불멍하며 한 모금, 맥주는 캠핑의 완성이 된다. <br>
+                        도심을 벗어난 순간, 맥주 한 캔이 진짜 쉼이 되는 시간.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image2">
+                    <img src="images/section2_p2.png" alt="">
+                </div>
+                <div class="content">
+                    <h1>여수에서 즐기는 맥주</h1>
+                    <p>여수 밤바다의 낭만, 그 한가운데서 마시는 시원한 맥주 한 잔. <br>
+                        파도 소리에 취하고, 맥주에 두 번 취하는 여름밤. <br>
+                        여수에서의 맥주는 단순한 음료가 아니라, 순간을 기억하게 하는 풍경이다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="section3">
+        <div class="container">
+            <div class="container-box">
+                <div class="p1">
+                    <a href=""><img src="images/beer1.png" alt=""></a>
+                    <h1>cass light</h1>
+                </div>
+                <div class="p2">
+                    <a href=""> <img src="images/camping1.jpg" alt="" class="section3_p1"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="section4">
+        <div class="sect4_m">
+            <div class="header">
+                <h1>CAMPING <span style="font-size: 0.6em;">in</span> YEOSU</h1>
+            </div>
+
+            <div class="slider-container">
+                <div class="slider-wrapper" id="sliderWrapper">
+                    <div class="slide">
+                        <img src="images/yeosu1.jpg" alt="">
+                        <div class="slide-content">
+                            <div class="slide-title">오동도</div>
+                            <div class="slide-subtitle">바다 뷰 캠핑</div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/yeosu2.jpg" alt="">
+                        <div class="slide-content">
+                            <div class="slide-title">여수 히디어디</div>
+                            <div class="slide-subtitle">산속 캠핑</div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/yeosu3.jpg" alt="">
+                        <div class="slide-content">
+                            <div class="slide-title">여수 히디어디</div>
+                            <div class="slide-subtitle">문화 체험</div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/yeosu4.jpg" alt="">
+                        <div class="slide-content">
+                            <div class="slide-title">여수 히디어디</div>
+                            <div class="slide-subtitle">캠프파이어</div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/yeosu5.jpg" alt="">
+                        <div class="slide-content">
+                            <div class="slide-title">여수 히디어디</div>
+                            <div class="slide-subtitle">일출 명소</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="nav-btn" id="prevBtn">‹</button>
+                <div class="dots" id="dotsContainer"></div>
+                <button class="nav-btn" id="nextBtn">›</button>
+                <button class="auto-play-btn" id="autoPlayBtn">자동재생</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="section5">
+        <div class="slide-b">
+            <div class="beer-slide1"><span class="beer-slide1">#CASS LIGHT</span> <span class="beer-slide2"><span
+                        class="beer-slid2">#STELLA </span>
+                    <span class="beer-slide3">#TERRA </span><span class="beer-slide1">#CASS LIGHT </span><span
+                        class="beer-slid2">#STELLA </span> <span class="beer-slide3"> #TERRA </span></div>
+
+            <div class="beer-slide2"><span class="beer-slide2">#STELLA </span> <span class="beer-slide3">#TERRA
+                </span><span class="beer-slide1">#CASS LIGHT </span><span class="beer-slid2">#STELLA </span> <span
+                    class="beer-slide3"> #TERRA </span><span class="beer-slide1">#CASS LIGHT</span> </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="section6">
+        <div class="sns-title">
+            <h1 class="title-h1">sns</h1>
+            <button class="btn"><a href="">더보기</a></button>
+        </div>
+
+        <div class="sns">
+            <div class="sns1">
+                <div class="scale1"><a href=""><img src="images/sns1.jpg" alt=""></a></div>
+                <div class="scale2"><a href=""><img src="images/sns2.jpg" alt=""></a></div>
+                <div class="scale3"><a href=""><img src="images/sns3.jpg" alt=""></a></div>
+            </div>
+            <div class="sns2">
+                <div class="scale4"><a href=""><img src="images/sns4.jpg" alt=""></a></div>
+                <div class="scale5"><a href=""><img src="images/sns5.jpg" alt=""></a></div>
+                <div class="scale6"><a href=""><img src="images/sns6.jpg" alt=""></a></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="section7">
+        <div class="bg7">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+            <div class="main-n">
+                <div class="news-main">
+                    <div class="news-title">
+                        <h1 class="title-h1">NEWS</h1>
+                        <button class="btn"><a href="">더보기</a></button>
+                    </div>
+                    <div class="news">
+                        <div class="news1"><a href="#"><img src="images/news1.jpg" alt=""></a></div>
+                        <div class="news2"><a href="#"><img src="images/news2.jpg" alt=""></a></div>
+                        <div class="news3"><a href="#"><img src="images/news3.jpg" alt=""></a></div>
+                    </div>
+                    <div class="youtube">
+                        <iframe width="100%" height="572"
+                            src="https://www.youtube.com/embed/GZcodNRb7ms?si=2Bq_2vOu9ogeEtb4"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    </section>
+    <footer>
+        <div class="footer">
+            <ul class="ftr">
+                <li>회사소개
+                    <ul class="fts-menu">
+                        <li>연혁</li>
+                        <li>인사말</li>
+                        <li>소개</li>
+                    </ul>
+                </li>
+                <li>브랜드
+                    <ul class="fts-menu">
+                        <li>브랜드 스토리</li>
+                        <li>매장</li>
+                    </ul>
+                </li>
+                <li>MENU
+                    <ul class="fts-menu">
+                        <li>NEW</li>
+                        <li>BEST</li>
+                        <li>Terra</li>
+                        <li>Feel good</li>
+                        <li>Cass fresh</li>
+                        <li>Stella</li>
+                        <li>Ect</li>
+                    </ul>
+                </li>
+                <li>EVENT
+                    <ul class="fts-menu">
+                        <li>Event</li>
+                        <li>타임세일</li>
+                        <li>혜택</li>
+                        <li>Event</li>
+                    </ul>
+                </li>
+                <li>커뮤니티
+                    <ul class="fts-menu">
+                        <li>공지사항</li>
+                        <li>고객의 소리</li>
+                        <li>자주묻는 질문</li>
+                        <li>NEWS</li>
+                        <li>상담전화</li>
+                    </ul>
+                </li>
+            </ul>
+            <hr>
+            <div class="footer-box">
+                <div class="bottom-ft">
+                    <ul class="ul-ft">
+                        <li>대표번호</li>
+                        <li>fax</li>
+                    </ul>
+                    <ul class="ul-ft">
+                        <li>010-1234-5678</li>
+                        <li>010-8745-9523</li>
+                    </ul>
+                </div>
+                <ul class="ft-icon">
+                    <a href="#" class="fa-brands fa-instagram"></a>
+                    <a href="#" class="fa-brands fa-facebook"></a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script>
+        class CampingSlider {
+            constructor() {
+                this.currentSlide = 0;
+                this.totalSlides = document.querySelectorAll('.slide').length;
+                this.sliderWrapper = document.getElementById('sliderWrapper');
+                this.prevBtn = document.getElementById('prevBtn');
+                this.nextBtn = document.getElementById('nextBtn');
+                this.dotsContainer = document.getElementById('dotsContainer');
+                this.autoPlayBtn = document.getElementById('autoPlayBtn');
+                this.isAutoPlaying = false;
+                this.autoPlayInterval = null;
+
+                this.init();
+            }
+
+            init() {
+                this.createDots();
+                this.updateSlider();
+                this.bindEvents();
+                this.startAutoPlay();
+            }
+
+            createDots() {
+                for (let i = 0; i < this.totalSlides; i++) {
+                    const dot = document.createElement('div');
+                    dot.className = 'dot';
+                    dot.addEventListener('click', () => this.goToSlide(i));
+                    this.dotsContainer.appendChild(dot);
+                }
+            }
+
+            updateSlider() {
+                const slideWidth = 320; // 300px width + 20px margin
+                const offset = -this.currentSlide * slideWidth;
+                this.sliderWrapper.style.transform = `translateX(${offset}px)`;
+
+                // Update dots
+                const dots = document.querySelectorAll('.dot');
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === this.currentSlide);
+                });
+            }
+
+            nextSlide() {
+                this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
+                this.updateSlider();
+            }
+
+            prevSlide() {
+                this.currentSlide = (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
+                this.updateSlider();
+            }
+
+            goToSlide(index) {
+                this.currentSlide = index;
+                this.updateSlider();
+            }
+
+            startAutoPlay() {
+                if (this.isAutoPlaying) return;
+
+                this.isAutoPlaying = true;
+                this.autoPlayBtn.textContent = '정지';
+                this.autoPlayInterval = setInterval(() => {
+                    this.nextSlide();
+                }, 3000);
+            }
+
+            stopAutoPlay() {
+                if (!this.isAutoPlaying) return;
+
+                this.isAutoPlaying = false;
+                this.autoPlayBtn.textContent = '자동재생';
+                clearInterval(this.autoPlayInterval);
+            }
+
+            toggleAutoPlay() {
+                if (this.isAutoPlaying) {
+                    this.stopAutoPlay();
+                } else {
+                    this.startAutoPlay();
+                }
+            }
+
+            bindEvents() {
+                this.nextBtn.addEventListener('click', () => {
+                    this.nextSlide();
+                    this.stopAutoPlay();
+                });
+
+                this.prevBtn.addEventListener('click', () => {
+                    this.prevSlide();
+                    this.stopAutoPlay();
+                });
+
+                this.autoPlayBtn.addEventListener('click', () => {
+                    this.toggleAutoPlay();
+                });
+
+                // 터치/마우스 드래그 지원
+                let startX = 0;
+                let currentX = 0;
+                let isDragging = false;
+
+                this.sliderWrapper.addEventListener('mousedown', (e) => {
+                    isDragging = true;
+                    startX = e.clientX;
+                    this.sliderWrapper.style.cursor = 'grabbing';
+                });
+
+                this.sliderWrapper.addEventListener('mousemove', (e) => {
+                    if (!isDragging) return;
+                    e.preventDefault();
+                    currentX = e.clientX - startX;
+                });
+
+                this.sliderWrapper.addEventListener('mouseup', () => {
+                    if (!isDragging) return;
+                    isDragging = false;
+                    this.sliderWrapper.style.cursor = 'grab';
+
+                    if (Math.abs(currentX) > 50) {
+                        if (currentX > 0) {
+                            this.prevSlide();
+                        } else {
+                            this.nextSlide();
+                        }
+                        this.stopAutoPlay();
+                    }
+                    currentX = 0;
+                });
+
+                // 터치 이벤트
+                this.sliderWrapper.addEventListener('touchstart', (e) => {
+                    startX = e.touches[0].clientX;
+                });
+
+                this.sliderWrapper.addEventListener('touchmove', (e) => {
+                    currentX = e.touches[0].clientX - startX;
+                });
+
+                this.sliderWrapper.addEventListener('touchend', () => {
+                    if (Math.abs(currentX) > 50) {
+                        if (currentX > 0) {
+                            this.prevSlide();
+                        } else {
+                            this.nextSlide();
+                        }
+                        this.stopAutoPlay();
+                    }
+                    currentX = 0;
+                });
+            }
+        }
+
+        // 슬라이더 초기화
+        document.addEventListener('DOMContentLoaded', () => {
+            new CampingSlider();
+        });
+    </script>
+
+
+
+</body>
+
+</html>

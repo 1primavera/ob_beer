@@ -911,7 +911,7 @@ span {
 }
 
 .news-main {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -966,8 +966,8 @@ span {
 .news1,
 .news2,
 .news3 {
-    width: 380px;
-    height: 380px;
+    width: 350px;
+    height: 350px;
     margin-bottom: 100px;
     overflow: hidden;
     border-radius: 20px;

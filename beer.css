@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'Saenggeo';
-    src: url('font/Saenggeo\ Jincheon.ttf') format('opentype');
-    font-weight: bold;
+    font-family: 'SaenggeoJincheon';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/SaenggeoJincheon.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
 }
 
